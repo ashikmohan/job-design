@@ -1,0 +1,200 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header {
+    background-color: #ffffff;
+    color: white;
+    padding: 10px 0;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: left;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    background-color: #163551;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.logo {
+    margin-left: 100px;
+    margin-top: 20px;
+}
+nav {
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    
+}
+
+.hero {
+    position: relative;
+    display: flex;
+  
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    background-image: url("./images/showing-curious-data.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: -1;
+}
+
+/* .hero-content,
+.apply-form {
+    position: relative;
+    z-index: 2;
+} */
+
+.hero h1 {
+    font-size: 50px;
+    margin: 00px 0 0px 80px;
+    color: #f8f9fa;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0 20px 80px;
+    color: #f8f9fa;
+    padding-right: 210px;
+}
+
+.get-started {
+    padding: 10px 20px;
+    background-color: #40a5a1;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 00px 0 0px 80px;
+}
+
+.apply-form {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 300px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 20px;
+    
+    
+}
+
+.apply-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.apply-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.apply-form input[type="text"],
+.apply-form input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.apply-form button {
+    padding: 10px 10px;
+    background-color: #03264cff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 0;
+    border-radius: 20px;
+    width: 40%;
+
+
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 10%;
+    background-color: #f8f9fa;
+}
+
+.service {
+    max-width: 30%;
+    min-width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .hero-content, .apply-form {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
